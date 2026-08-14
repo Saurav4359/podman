@@ -65,7 +65,10 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "engines": {
-    "node": "24"
+    "node": "24.x"
   },
-  "packageManager": "yarn@3.8.7"
+  "packageManager": "yarn@3.8.7",
+  "resolutions": {
+    "webpack": "5.88.2"
+  }
 }

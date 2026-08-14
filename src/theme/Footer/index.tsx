@@ -160,16 +160,6 @@ function Footer() {
           </nav>
         </div>
       </div>
-
-      <div className="site-footer__watermark" aria-hidden="true">
-        <div className="site-footer__watermark-text">
-          {'Podman'.split('').map((char, index) => (
-            <span key={`${char}-${index}`} className="site-footer__watermark-letter">
-              {char}
-            </span>
-          ))}
-        </div>
-      </div>
     </footer>
   );
 }

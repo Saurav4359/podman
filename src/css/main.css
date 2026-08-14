@@ -12,6 +12,7 @@
   --ifm-color-primary-light: #bd58dd;
   --ifm-color-primary-lightest: #e3b4f3;
   --ifm-code-fonts-size: 95%;
+  --ifm-navbar-height: 4.2rem;
   --docusaurus-highlighted-code-line-bg: rgba(43, 39, 53, 0.1);
 }
 
@@ -540,56 +541,6 @@
   opacity: 0.95;
 }
 
-.site-footer__watermark {
-  position: relative;
-  z-index: 0;
-  margin-top: 0.5rem;
-  margin-bottom: 0;
-  padding: 0 0 1.25rem;
-  pointer-events: none;
-  user-select: none;
-}
-
-.site-footer__watermark-text {
-  display: block;
-  width: 100%;
-  margin: 0 0 -0.24em;
-  padding: 0 0.75rem;
-  font-family: Montserrat, ui-sans-serif, system-ui, sans-serif;
-  font-size: clamp(4.5rem, 18vw, 13rem);
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: center;
-  white-space: nowrap;
-}
-
-@media (min-width: 640px) {
-  .site-footer__watermark-text {
-    padding: 0 1rem;
-  }
-}
-
-.site-footer__watermark-letter {
-  pointer-events: auto;
-  cursor: default;
-  display: inline-block;
-  font: inherit;
-  line-height: 1;
-  vertical-align: bottom;
-  margin: 0;
-  padding: 0;
-  color: theme('colors.gray.100');
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.22);
-  text-shadow: none;
-  transition: color 0.2s ease, -webkit-text-stroke 0.2s ease;
-}
-
-.site-footer__watermark-letter:hover {
-  color: theme('colors.white');
-  -webkit-text-stroke: 1px transparent;
-}
-
 /* Override global base typography inside footer */
 .site-footer p,
 .site-footer h3 {
@@ -993,16 +944,6 @@
 
 [data-theme='dark'] .site-footer__bottom {
   border-top-color: rgba(255, 255, 255, 0.22);
-}
-
-[data-theme='dark'] .site-footer__watermark-letter {
-  color: theme('colors.gray.100');
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.22);
-}
-
-[data-theme='dark'] .site-footer__watermark-letter:hover {
-  color: theme('colors.white');
-  -webkit-text-stroke: 1px transparent;
 }
 
 .footer__copyright p {
@@ -5752,6 +5693,15 @@
 }
 
 /* Blog & release posts */
+
+html.docs-wrapper .main-wrapper {
+  padding-top: var(--ifm-navbar-height);
+}
+
+html.docs-wrapper .breadcrumbs__link {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .blog-wrapper {
   --blog-ink: theme('colors.gray.900');
