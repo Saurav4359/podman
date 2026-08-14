@@ -32,8 +32,23 @@ function MeetingDetailPage() {
   const minutesContent = meeting.module.default(contentRef);
 
   const handleCopyLink = async () => {
+    const url = window.location.href;
+
     try {
-      await navigator.clipboard.writeText(window.location.href);
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(url);
+      } else {
+        const textarea = document.createElement('textarea');
+        textarea.value = url;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'absolute';
+        textarea.style.left = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+      }
+
       setCopied(true);
       window.setTimeout(() => setCopied(false), 2000);
     } catch {
