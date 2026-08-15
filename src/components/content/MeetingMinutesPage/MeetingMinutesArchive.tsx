@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import Link from '@docusaurus/Link';
 import { Icon } from '@iconify/react';
+import YouTubeIcon from '@site/src/components/ui/YouTubeIcon';
 import {
   getMeetingPath,
   getMeetingsByType,
@@ -101,7 +102,7 @@ function MeetingMinutesArchive() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <Icon icon="mdi:youtube" className="meeting-minutes-list__link-icon meeting-minutes-list__link-icon--youtube" aria-hidden="true" />
+                          <YouTubeIcon className="meeting-minutes-list__link-icon meeting-minutes-list__link-icon--youtube" />
                           Recording
                         </a>
                       ) : null}

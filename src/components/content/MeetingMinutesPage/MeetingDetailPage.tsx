@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import { matchPath, useLocation } from '@docusaurus/router';
 import { Icon } from '@iconify/react';
 import NotFound from '@theme/NotFound';
+import YouTubeIcon from '@site/src/components/ui/YouTubeIcon';
 import { getMeetingBySlug } from '@site/static/data/meetings/registry';
 
 function MeetingTypeBadge({ type }: { type: 'community' | 'cabal' }) {
@@ -85,7 +86,7 @@ function MeetingDetailPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Icon icon="mdi:youtube" className="meeting-minutes-detail__action-icon meeting-minutes-detail__action-icon--youtube" aria-hidden="true" />
+                  <YouTubeIcon className="meeting-minutes-detail__action-icon meeting-minutes-detail__action-icon--youtube" />
                   Watch recording
                 </a>
               ) : null}
