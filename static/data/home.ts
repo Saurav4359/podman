@@ -35,28 +35,24 @@ const featureSection = {
 const featureList = [
   {
     title: 'Fast and light.',
-    icon: 'tabler:bolt',
     description:
       "Daemonless, using the fastest technologies for a snappy experience. Our UI is reactive and light on resource usage and won't drag you down.",
     href: 'https://www.redhat.com/architect/hpc-containers-scale-using-podman',
   },
   {
     title: 'Secure.',
-    icon: 'tabler:shield-check',
     description:
       'Rootless containers allow you to contain privileges without compromising functionality. Trusted by US government agencies for secure HPC at scale.',
     link: { text: 'Case study', href: 'https://www.redhat.com/architect/hpc-containers-scale-using-podman' },
   },
   {
     title: 'Open.',
-    icon: 'tabler:lock-open',
     description:
       "Podman is open source first and won't lock you in. Podman Desktop can be used as one tool to manage all your containers, regardless of container engine - even if you don't use Podman as your container engine.",
     href: 'https://developers.redhat.com/blog/2020/11/19/transitioning-from-docker-to-podman',
   },
   {
     title: 'Compatible.',
-    icon: 'tabler:puzzle',
     description:
       'Compatible with other OCI compliant container formats including Docker. Run your legacy Docker containers (including docker-compose files) on Podman.',
     link: { text: 'Learn more', href: 'https://developers.redhat.com/blog/2020/11/19/transitioning-from-docker-to-podman' },

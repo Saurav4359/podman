@@ -15,44 +15,39 @@ import { header, featureSection, featureList, kubernetesBanner, ecosystemSection
 /* PAGE COMPONENTS */
 const FeatureItem = ({
   title,
-  icon,
   description,
   link,
 }: {
   title: string;
-  icon: string;
   description: string;
   link?: { text: string; href: string };
 }) => (
-  <div className="flex gap-5 p-6 md:gap-6 md:p-8">
-    <div className="feature-icon-box flex h-12 w-12 shrink-0 items-center justify-center rounded-md border border-gray-200 bg-white dark:border-purple-300/40 dark:bg-purple-700/25">
-      <Icon icon={icon} className="text-[1.35rem] text-purple-700 dark:text-purple-100" />
-    </div>
-    <div className="min-w-0 space-y-2.5">
-      <h3 className="text-xl font-bold text-gray-900 dark:text-gray-50 md:text-2xl">{title}</h3>
-      <p className="text-base leading-relaxed text-gray-500 dark:text-gray-100 md:text-lg md:leading-relaxed">
-        {description}
-      </p>
-      {link && (
-        <a
-          href={link.href}
-          className="heading-link-underline inline-flex items-center gap-1 text-base font-medium !text-purple-700 no-underline dark:!text-purple-100"
-        >
-          {link.text}
-          <Icon icon="tabler:arrow-up-right" className="text-base text-current" />
-        </a>
-      )}
-    </div>
+  <div className="space-y-2.5 p-6 md:p-7">
+    <h3 className="font-display text-xl font-bold text-purple-700 dark:text-purple-300 md:text-2xl">{title}</h3>
+    <p className="text-base leading-relaxed text-gray-600 dark:text-gray-200 md:text-lg md:leading-relaxed">
+      {description}
+    </p>
+    {link && (
+      <a
+        href={link.href}
+        className="heading-link-underline inline-flex items-center gap-1 text-base font-medium !text-purple-700 no-underline dark:!text-purple-300"
+      >
+        {link.text}
+        <Icon icon="tabler:arrow-up-right" className="text-base text-current" />
+      </a>
+    )}
   </div>
 );
 
 const FeatureSection = () => {
   return (
-    <section className="mx-auto mb-10 max-w-6xl px-4 md:mb-12 md:px-6 lg:max-w-7xl">
-      <div className="mb-8 space-y-4 text-center md:mb-10">
+    <section className="home-feature-section relative z-10 mx-auto mb-10 max-w-6xl px-4 md:mb-12 md:px-6 lg:max-w-7xl">
+      <div className="home-feature-section__eyebrow">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-purple-700 dark:text-purple-100 md:text-base">
           {featureSection.eyebrow}
         </p>
+      </div>
+      <div className="mb-8 space-y-4 text-center md:mb-10 md:mt-2 lg:mt-3">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-50 md:text-4xl lg:text-[2.75rem] lg:leading-tight">
           {featureSection.title}
         </h2>
@@ -69,7 +64,6 @@ const FeatureSection = () => {
           >
             <FeatureItem
               title={feature.title}
-              icon={feature.icon}
               description={feature.description}
               link={feature.link}
             />

@@ -11,12 +11,12 @@ module.exports = {
       aqua: '#f2f9f9',
       black: '#000000',
       blue: {
-        50: '#EEF2FD',
-        100: '#DDE6FA',
-        300: '#A8BEF3',
-        500: '#628FE8',
-        700: '#4578E2',
-        900: '#2A5099',
+        50: '#EDFDFF',
+        100: '#BEDDF9',
+        300: '#72DDF5',
+        500: '#18BEEF',
+        700: '#0091EB',
+        900: '#0C4F8A',
       },
       /* podman desktop purple */
       'deep-purple': {
