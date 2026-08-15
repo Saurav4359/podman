@@ -3906,7 +3906,7 @@
   font-size: 0.875rem;
   font-weight: 600;
   color: theme('colors.white');
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
 }
 
@@ -3931,14 +3931,18 @@
   filter: none;
 }
 
-[data-theme='dark'] .meeting-minutes-detail__action {
+[data-theme='dark'] .meeting-minutes-detail__action:not(.meeting-minutes-detail__action--subtle) {
   border-color: theme('colors.blue.500');
   background: theme('colors.blue.500');
+  color: theme('colors.white');
+  text-decoration: none !important;
 }
 
-[data-theme='dark'] .meeting-minutes-detail__action:hover {
+[data-theme='dark'] .meeting-minutes-detail__action:not(.meeting-minutes-detail__action--subtle):hover {
   background: theme('colors.blue.300');
   border-color: theme('colors.blue.300');
+  color: theme('colors.white');
+  opacity: 1;
   filter: none;
 }
 
