@@ -2,6 +2,10 @@ const header = {
   title: 'Podman Features',
   subtitle:
     'Podman is an open source container, pod, and container image management engine. Podman provides the tools you need to build, run, and manage containers, pods, and images — on the command line or with Podman Desktop.',
+  image: {
+    path: 'images/optimized/characters/seal-surfing-tech-board-1536w-1024h.webp',
+    alt: 'Podman seal on a circuit board surfboard',
+  },
 };
 
 const navigation = [

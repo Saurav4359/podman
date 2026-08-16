@@ -3,6 +3,10 @@ const header = {
   title: 'Get Started with Podman',
   subtitle:
     'Podman is a utility provided as part of the libpod library. It can be used to create and maintain containers. The following tutorial will teach you how to set up Podman and perform some basic commands.',
+  image: {
+    path: 'images/optimized/characters/seal-paris-eiffel-1536w-1024h.webp',
+    alt: 'Podman seal by the Seine with the Eiffel Tower at night',
+  },
 };
 
 const navigation = [

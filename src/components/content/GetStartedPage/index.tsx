@@ -19,15 +19,27 @@ import {
 
 type ResourceItem = (typeof gettingStartedResources.items)[number];
 
-function GetStartedHero() {
+function GetStartedPageHeader() {
   return (
-    <header className="features-hero">
-      <div className="features-hero__box">
-        <p className="features-hero__eyebrow">{header.eyebrow}</p>
-        <div className="features-hero__main">
+    <header className="features-page-header">
+      <div className="features-shell features-page-header__inner">
+        <div className="features-page-header__copy">
+          <p className="features-hero__eyebrow">{header.eyebrow}</p>
           <h1 className="features-hero__title">{header.title}</h1>
           <p className="features-hero__subtitle">{header.subtitle}</p>
         </div>
+        <figure className="features-page-header__art">
+          <img
+            src={header.image.path}
+            alt={header.image.alt}
+            className="features-page-header__img"
+            width={1536}
+            height={1024}
+            draggable={false}
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
       </div>
     </header>
   );
@@ -375,10 +387,7 @@ function GetStartedPage() {
 
   return (
     <div className="features-page get-started-page">
-      <div className="features-shell">
-        <GetStartedHero />
-      </div>
-
+      <GetStartedPageHeader />
       <GetStartedNav activeIndex={activeIndex} onJump={scrollToSection} />
 
       <div className="features-sections">

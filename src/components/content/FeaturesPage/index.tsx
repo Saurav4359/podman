@@ -283,15 +283,27 @@ function FeatureTerminalScreenshot({
   );
 }
 
-function FeaturesHero() {
+function FeaturesPageHeader() {
   return (
-    <header className="features-hero">
-      <div className="features-hero__box">
-        <p className="features-hero__eyebrow">Open source container tools</p>
-        <div className="features-hero__main">
+    <header className="features-page-header">
+      <div className="features-shell features-page-header__inner">
+        <div className="features-page-header__copy">
+          <p className="features-hero__eyebrow">Open source container tools</p>
           <h1 className="features-hero__title">{header.title}</h1>
           <p className="features-hero__subtitle">{header.subtitle}</p>
         </div>
+        <figure className="features-page-header__art">
+          <img
+            src={header.image.path}
+            alt={header.image.alt}
+            className="features-page-header__img"
+            width={1536}
+            height={1024}
+            draggable={false}
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
       </div>
     </header>
   );
@@ -829,10 +841,7 @@ function FeaturesPage() {
 
   return (
     <div className="features-page">
-      <div className="features-shell">
-        <FeaturesHero />
-      </div>
-
+      <FeaturesPageHeader />
       <FeaturesNav activeIndex={activeIndex} onJump={scrollToSection} />
 
       <div className="features-sections">

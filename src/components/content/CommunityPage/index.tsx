@@ -144,6 +144,7 @@ function CommunityHero() {
           className="community-hero__img"
           width={6008}
           height={3467}
+          draggable={false}
           loading="eager"
           decoding="async"
         />
