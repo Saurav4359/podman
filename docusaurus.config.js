@@ -84,9 +84,9 @@ const config = {
         },
         items: [
           { to: 'features', label: 'Features', position: 'right' },
-          { to: 'downloads', label: 'Downloads', position: 'right' },
           { to: 'get-started', label: 'Get Started', position: 'right' },
           { to: 'community', label: 'Community', position: 'right' },
+          { to: 'downloads', label: 'Downloads', position: 'right' },
           { to: 'blogs', label: 'Blog', position: 'right', activeBasePath: 'blogs' },
           {
             type: 'doc',

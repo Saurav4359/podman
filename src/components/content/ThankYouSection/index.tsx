@@ -15,7 +15,7 @@ function ThankYouSection(): JSX.Element {
   return (
     <section className="my-8 lg:my-12">
       <header className="container my-4 text-center lg:my-8">
-        <h2 className="mb-3 text-blue-700 dark:text-purple-500">Special thanks to our contributors</h2>
+        <h2 className="mb-3 text-blue-700 dark:text-purple-400">Special thanks to our contributors</h2>
         <p className="text-gray-900">
           The Podman community has contributors from many different organizations, including:
         </p>

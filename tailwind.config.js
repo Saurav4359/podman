@@ -41,7 +41,9 @@ module.exports = {
         50: '#FBF5F3',
         100: '#F7EAFD',
         300: '#E3B4F3',
+        400: '#D086E8',
         500: '#BD58DD',
+        600: '#A642BE',
         /*Brand Purple */
         700: '#892CA0',
         900: '#5F246B',

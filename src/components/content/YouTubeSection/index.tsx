@@ -87,7 +87,7 @@ function YouTubeSection() {
     <section className="youtube-section border-t border-gray-200 bg-gray-50 py-12 dark:border-gray-700 dark:bg-white/[0.02] md:py-16">
       <div className="mx-auto max-w-6xl px-4 md:px-6 lg:max-w-7xl">
         <div className="mb-8 space-y-3 text-center md:mb-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-purple-700 dark:text-purple-100 md:text-base">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-purple-700 dark:text-purple-400 md:text-base">
             {eyebrow}
           </p>
           <h2 className="text-2xl font-bold !text-gray-900 dark:!text-gray-50 md:text-3xl">{title}</h2>

@@ -43,7 +43,7 @@ const sections = [
     ],
     cta: {
       text: 'Download Podman Desktop',
-      href: 'https://podman-desktop.io/downloads',
+      href: '/downloads',
     },
   },
   {

@@ -23,14 +23,14 @@ const FeatureItem = ({
   link?: { text: string; href: string };
 }) => (
   <div className="space-y-2.5 p-6 md:p-7">
-    <h3 className="font-display text-xl font-bold text-purple-700 dark:text-purple-300 md:text-2xl">{title}</h3>
+    <h3 className="font-display text-xl font-bold text-purple-700 dark:text-purple-400 md:text-2xl">{title}</h3>
     <p className="text-base leading-relaxed text-gray-600 dark:text-gray-200 md:text-lg md:leading-relaxed">
       {description}
     </p>
     {link && (
       <a
         href={link.href}
-        className="heading-link-underline inline-flex items-center gap-1 text-base font-medium !text-purple-700 no-underline dark:!text-purple-300"
+        className="heading-link-underline inline-flex items-center gap-1 text-base font-medium !text-purple-700 no-underline dark:!text-purple-400"
       >
         {link.text}
         <Icon icon="tabler:arrow-up-right" className="text-base text-current" />
@@ -43,7 +43,7 @@ const FeatureSection = () => {
   return (
     <section className="home-feature-section relative z-10 mx-auto mb-10 max-w-6xl px-4 md:mb-12 md:px-6 lg:max-w-7xl">
       <div className="home-feature-section__eyebrow">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-purple-700 dark:text-purple-100 md:text-base">
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-purple-700 dark:text-purple-400 md:text-base">
           {featureSection.eyebrow}
         </p>
       </div>

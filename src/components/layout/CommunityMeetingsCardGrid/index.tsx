@@ -211,7 +211,7 @@ function CommunityMeetingsCardGrid({ cards }) {
             <SectionHeader
               title=""
               description="Most Recent meetings"
-              textGradientStops="from-purple-500 to-purple-700 dark:text-purple-500"
+              textGradientStops="from-purple-500 to-purple-700 dark:text-purple-400"
               textGradient={false}
             />
             <SubcardGrid key={`subcard-grid-${index}`} cards={meetingsData} toggleIsModalOpen={toggleIsModalOpen} />

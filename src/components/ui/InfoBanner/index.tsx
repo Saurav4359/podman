@@ -19,7 +19,7 @@ function InfoBanner({
   styles,
   icon,
   bgColor = 'from-blue-700 via-blue-700 to-blue-900 dark:from-blue-500  dark:to-blue-700',
-  titleColor = 'text-purple-700 dark:text-purple-500',
+  titleColor = 'text-purple-700 dark:text-purple-400',
   marginHeight = 'mt-8 lg:mt-16',
 }: BannerProps): JSX.Element {
   return (

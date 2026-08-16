@@ -37,8 +37,8 @@ const TabContent = (props): JSX.Element => {
               isActive % 2 === 0
                 ? 'text-white dark:text-white'
                 : isActive === 1
-                ? 'text-blue-700 dark:text-purple-500'
-                : 'text-purple-700 dark:text-purple-500'
+                ? 'text-blue-700 dark:text-purple-400'
+                : 'text-purple-700 dark:text-purple-400'
             }`}>
             {title}
           </h3>

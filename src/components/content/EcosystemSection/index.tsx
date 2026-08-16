@@ -46,7 +46,7 @@ function EcosystemSection({ title, tools }: EcosystemSectionProps) {
               href={tool.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="heading-link-underline text-sm font-medium !text-purple-700 no-underline dark:!text-purple-100"
+              className="heading-link-underline text-sm font-medium !text-purple-700 no-underline dark:!text-purple-400"
             >
               Learn more
               <Icon icon="tabler:external-link" className="shrink-0 text-sm text-current" aria-hidden="true" />

@@ -47,7 +47,7 @@ function KubernetesReadySection({
           <div className="flex flex-wrap items-center justify-center gap-5 md:justify-start">
             <a
               href={learnMore.path}
-              className="heading-link-underline inline-flex items-center gap-1 text-base font-semibold !text-purple-700 no-underline dark:!text-purple-100"
+              className="heading-link-underline inline-flex items-center gap-1 text-base font-semibold !text-purple-700 no-underline dark:!text-purple-400"
             >
               {learnMore.text}
               <Icon icon="tabler:arrow-right" className="text-base text-current" />

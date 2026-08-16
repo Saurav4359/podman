@@ -29,7 +29,7 @@ type InstructionsProps = PageHeaderProps & {
 const TextBox = ({ grid, display, layout, title, description }: PageHeaderProps): JSX.Element => {
   return (
     <div className={`${grid} ${display} ${layout}`}>
-      <h1 className="mb-6 max-w-sm text-purple-700 dark:text-purple-500 lg:max-w-lg ">{title}</h1>
+      <h1 className="mb-6 max-w-sm text-purple-700 dark:text-purple-400 lg:max-w-lg ">{title}</h1>
       <Markdown text={description} styles="leading-relaxed" />
     </div>
   );

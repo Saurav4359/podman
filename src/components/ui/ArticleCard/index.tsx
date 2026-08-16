@@ -102,7 +102,7 @@ function ArticleCard(props: ArticleCardProps) {
               href={props.author_link}
               target="_blank"
               rel="noopener noreferrer"
-              className="pointer-events-auto relative z-[3] font-medium !text-purple-700 no-underline dark:!text-purple-100">
+              className="pointer-events-auto relative z-[3] font-medium !text-purple-700 no-underline dark:!text-purple-400">
               {props.display_name}
             </a>
           </p>
@@ -144,7 +144,7 @@ function ArticleCard(props: ArticleCardProps) {
           </div>
           <div className="max-w-sm items-center gap-2 self-center p-2 pr-4">
             <p>{abbrSubtitle}</p>
-            <p className="mt-2 text-purple-700">
+            <p className="mt-2 text-purple-700 dark:text-purple-400">
               By: <a href={props.author_link}>{props.display_name}</a>
             </p>
           </div>
@@ -167,7 +167,7 @@ function ArticleCard(props: ArticleCardProps) {
         <p>{abbrSubtitle}</p>
         <PublishDate date={props.date} styles="row-start-1 col-start-1 z-10 my-2" />
         <img src={props.imgSrc || fallbackImage} className="object-fit col-start-1 row-start-1 rounded-sm" alt="" />
-        <p className="text-purple-700">
+        <p className="text-purple-700 dark:text-purple-400">
           By: <a href={props.author_link}>{props.display_name}</a>
         </p>
       </div>

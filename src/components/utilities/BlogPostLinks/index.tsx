@@ -15,7 +15,7 @@ function BlogPostLinks({ className = '', layout = 'inline' }: BlogPostLinksProps
           href="https://blog.podman.io"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 rounded-md border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold !text-purple-700 no-underline transition hover:border-purple-700 dark:border-gray-700 dark:bg-white/[0.03] dark:!text-purple-100 dark:hover:border-purple-100"
+          className="inline-flex items-center gap-1.5 rounded-md border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold !text-purple-700 no-underline transition hover:border-purple-700 dark:border-gray-700 dark:bg-white/[0.03] dark:!text-purple-400 dark:hover:border-purple-500"
         >
           Development Blog
           <Icon icon="tabler:external-link" aria-hidden="true" />
@@ -38,12 +38,12 @@ function BlogPostLinks({ className = '', layout = 'inline' }: BlogPostLinksProps
         href="https://blog.podman.io"
         target="_blank"
         rel="noopener noreferrer"
-        className="font-medium !text-purple-700 no-underline hover:underline dark:!text-purple-100"
+        className="font-medium !text-purple-700 no-underline hover:underline dark:!text-purple-400"
       >
         Development Blog
       </a>{' '}
       or browse the{' '}
-      <Link to="/blogs" className="font-medium !text-purple-700 no-underline hover:underline dark:!text-purple-100">
+      <Link to="/blogs" className="font-medium !text-purple-700 no-underline hover:underline dark:!text-purple-400">
         on-site archive
       </Link>
       .

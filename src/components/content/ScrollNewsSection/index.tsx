@@ -76,7 +76,7 @@ function ScrollNewsSection({ title = 'Latest Podman News', limit = 4 }: ScrollNe
   if (steps <= 1) {
     return (
       <section className="news-scroll-section border-t border-gray-200 py-12 dark:border-gray-700 md:py-16">
-        <h2 className="mb-8 text-center text-2xl font-bold !text-purple-700 dark:!text-purple-100 md:mb-10 md:text-3xl">
+        <h2 className="mb-8 text-center text-2xl font-bold !text-purple-700 dark:!text-purple-400 md:mb-10 md:text-3xl">
           {title}
         </h2>
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-6 md:grid-cols-3">
@@ -93,7 +93,7 @@ function ScrollNewsSection({ title = 'Latest Podman News', limit = 4 }: ScrollNe
 
   return (
     <section className="news-scroll-section border-t border-gray-200 py-12 dark:border-gray-700 md:py-16" aria-label={title}>
-      <h2 className="mb-8 text-center text-2xl font-bold !text-purple-700 dark:!text-purple-100 md:mb-10 md:text-3xl">
+      <h2 className="mb-8 text-center text-2xl font-bold !text-purple-700 dark:!text-purple-400 md:mb-10 md:text-3xl">
         {title}
       </h2>
 

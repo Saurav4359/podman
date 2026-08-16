@@ -68,7 +68,7 @@ function Testimonial(props: TestimonialProps) {
             target="_blank"
             rel="noopener noreferrer"
             href={props.featuredlink}
-            className="text-sm text-purple-700 no-underline hover:text-purple-900 dark:text-purple-100 dark:hover:text-white"
+            className="text-sm text-purple-700 no-underline hover:text-purple-900 dark:text-purple-400 dark:hover:text-purple-500"
           >
             {props.featuredlink}
           </a>
@@ -79,7 +79,7 @@ function Testimonial(props: TestimonialProps) {
           href={props.path}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-inherit no-underline hover:text-purple-700 dark:hover:text-purple-100"
+          className="text-inherit no-underline hover:text-purple-700 dark:hover:text-purple-500"
         >
           {props.date}
         </a>
