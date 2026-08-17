@@ -3,10 +3,6 @@ id: podman
 title: Getting Started with Podman
 ---
 
-![Podman logo](/logos/optimized/podman-logo-orig-884w-293h.webp#gh-light-mode-only)![Podman logo](/logos/optimized/podman-logo-dark-884w-293h.webp#gh-dark-mode-only)
-
-# Getting Started with Podman
-
 Podman is a utility provided as part of the libpod library. It can be used to
 create and maintain containers. The following tutorial will teach you how to set
 up Podman and perform some basic commands.
@@ -14,7 +10,7 @@ up Podman and perform some basic commands.
 ## Podman Documentation
 
 The documentation for Podman is located
-[here](https://docs.podman.io).
+[here](/docs/documentation).
 
 ## Installing Podman
 
@@ -194,7 +190,7 @@ You can verify the deletion of the container by running `podman ps -a`.
 ## Network
 
 For a more detailed guide about Networking and DNS in containers, please see the
-[network guide](https://github.com/containers/podman/blob/main/docs/tutorials/basic_networking.md).
+[network guide](/docs/network).
 
 ## Checkpoint, Migration and Restoring containers
 
@@ -213,7 +209,7 @@ environment, checkout the Integration Tests
 ## Podman Python Documentation
 
 The documentation for the Podman Python SDK is located
-[here](https://podman-py.readthedocs.io/en/latest/index.html).
+[here](/docs/podman-python).
 
 ## More information
 

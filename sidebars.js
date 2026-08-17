@@ -19,24 +19,24 @@ const sidebars = {
       label: 'Checkpoint',
     },
     {
-      type: 'link',
+      type: 'doc',
+      id: 'tutorials',
       label: 'Tutorials',
-      href: 'https://docs.podman.io/en/latest/Tutorials.html',
     },
     {
-      type: 'link',
+      type: 'doc',
+      id: 'documentation',
       label: 'Documentation',
-      href: 'https://docs.podman.io',
     },
     {
-      type: 'link',
+      type: 'doc',
+      id: 'network',
       label: 'Network',
-      href: 'https://github.com/containers/podman/blob/main/docs/tutorials/basic_networking.md',
     },
     {
-      type: 'link',
+      type: 'doc',
+      id: 'podman-python',
       label: 'Podman Python',
-      href: 'https://podman-py.readthedocs.io/en/latest/index.html',
     },
   ],
 };
